@@ -1,7 +1,5 @@
 # Use the Home Assistant base image (automatically selected for your architecture)
-ARG BUILD_FROM
-FROM ${BUILD_FROM}
-
+FROM ghcr.io/home-assistant/base:latest
 # Install Python (UI/API server) and Node.js (registry sync worker)
 RUN apk add --no-cache python3 nodejs npm
 
